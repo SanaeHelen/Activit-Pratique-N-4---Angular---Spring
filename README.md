@@ -60,8 +60,20 @@ Première Partie (First Demo) :
 
 
 
-   - dcnsncinc
-   - bsjcndsnsdnchikdsnh
+   - Affichage d'une liste de produits :
+       - Creation d'une liste statique de produits dans le fichier products.component.ts :
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/497420fb-1783-4f36-a46f-2b2ceaddd8cd)
+
+       - Creation d'une table pour afficher les produits dans le  fichier products.component.html :
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7a83779f-84e4-41f2-bbc1-f1480a26be69)
+
+       - L'affichage :
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7407fddf-7fdd-4636-9f48-92435aefaf9f)
+
+
+          
+          
+   - Suppression des produits : 
    - ddjsbsjd
    - dnvsdnvdbvdjoihwir
    - vnvkdnvnd
