@@ -17,7 +17,17 @@ Première Partie (First Demo) :
      
      
 
-   - nscjdsnkns
+   - Création des composants :
+     
+     Nous avons créé deux composants, home et products, en utilisant les commandes : `ng g c home` et `ng g c product`.
+     ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/5fec184e-5950-48a9-8ab1-34e58a18ce7f)
+
+     Nous avons déclaré les routes de ces composants dans le fichier app-routing.module.ts.
+     ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/388451c7-f121-4e2a-a8ee-98fded118a1a)
+
+
+
+
    - cndncndnck
    - dcnsncinc
    - bsjcndsnsdnchikdsnh
@@ -26,7 +36,9 @@ Première Partie (First Demo) :
    - vnvkdnvnd
    - vknvknkvnsd
    - nknvskdnv
- 
+ le fichier app.component.html : 
+![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0766934f-e703-4eed-bcf8-0a1f3d22963d)
+
 Deuxième Partie :
 Créer une application web Angular qui permet de gérer des produits avec un backend basé sur Json-server
 
