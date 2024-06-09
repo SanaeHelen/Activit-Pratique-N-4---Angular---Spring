@@ -42,7 +42,24 @@ Première Partie (First Demo) :
 
 
 
-   - Personnalisation des composants : 
+   - Personnalisation des composants :
+     
+      - le fichier home.component.html :
+        
+          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/9a78c0ef-d49c-4121-bf6e-c80084b0396a)
+        
+      - le fichier products.component.html :
+        
+          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/a7c513c5-43ed-4b4e-a208-14c9a47e988e)
+        
+      - L'affichage : 
+               
+          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0253820a-1fb5-4d1e-8507-fc5cbf2f0c1b)
+          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7fd16d29-6b76-4833-a5ed-0762481b0aa5)
+
+
+
+
    - dcnsncinc
    - bsjcndsnsdnchikdsnh
    - ddjsbsjd
