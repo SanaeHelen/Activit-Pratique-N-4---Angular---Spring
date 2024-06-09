@@ -1,18 +1,18 @@
 # Activit-Pratique-N-4---Angular---Spring
 
 
-Première Partie (First Demo) : 
+**Première Partie  :**
 
    Tout d'abord, nous avons installé Node.js à partir du site https://nodejs.org/en. Ensuite, nous avons installé Angular CLI avec la commande suivante : `npm install -g @angular/cli`. Puis, nous avons créé le projet "FirstApp" en utilisant la commande `ng new FirstApp --no-standalone`. 
    Pour démarrer le serveur Angular, nous avons accédé au dossier "FirstApp" et tapé la commande `ng serve`. Ensuite, nous avons effectué les tâches suivantes.
 
    - Installation de boostrap :
      
-      Nous avons installé Bootstrap avec la commande suivante : `npm i bootstrap bootstrap-icons`.
+      - Nous avons installé Bootstrap avec la commande suivante : `npm i bootstrap bootstrap-icons`.
      
       ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/863ca352-bb3c-42e2-8b57-d0d4ae6254fe)
 
-      Nous avons déclaré le module Bootstrap dans le fichier angular.json :
+      - Nous avons déclaré le module Bootstrap dans le fichier angular.json :
      
       ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/60b9ed36-cf2d-46b5-89a8-2d00d83ba140)
 
@@ -21,21 +21,21 @@ Première Partie (First Demo) :
 
    - Création des composants :
      
-     Nous avons créé deux composants, home et products, en utilisant les commandes : `ng g c home` et `ng g c product`.
+     - Nous avons créé deux composants, home et products, en utilisant les commandes : `ng g c home` et `ng g c product`.
      
      ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/5fec184e-5950-48a9-8ab1-34e58a18ce7f)
 
-     Nous avons déclaré les routes de ces composants dans le fichier app-routing.module.ts.
+     - Nous avons déclaré les routes de ces composants dans le fichier app-routing.module.ts.
      
      ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/388451c7-f121-4e2a-a8ee-98fded118a1a)
 
 
-     Dans le fichier app.component.html, nous avons créé deux boutons stylés pour "Home" et "Products" qui changent la vue affichée dans le <router-outlet> en fonction des liens de routage Angular :
+     - Dans le fichier app.component.html, nous avons créé deux boutons stylés pour "Home" et "Products" qui changent la vue affichée dans le <router-outlet> en fonction des liens de routage Angular :
      
      ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0766934f-e703-4eed-bcf8-0a1f3d22963d)
 
 
-     L'affichage :
+     - L'affichage :
      
      ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/f0a25b2d-898c-4c26-939f-f8ccfcae7231)
      ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/1f9058aa-f994-4c79-9358-64302f419c00)
@@ -156,7 +156,7 @@ Développer une application qui permet de gérer le payement des étudiants. Cha
 - Chaque étudiant est défini par son : id, firstName, lastName, email, sa filière, sa photo,
 - Chaque Payement est défini par son id, son code, sa date, son type (CASH, CHECK,TRANSFER), son status (CREATED, VALIDATED, REJECTED), file (fichier pdf représentant le reçu de payement)
 
-A: Développer et Tester la partie Backend avec Spring. :  https://www.youtube.com/watch?v=oTuAXfD2M1g
+A: Développer et Tester la partie Backend avec Spring. :  
    1. Créer les entités JPA
    2. Créer les interfaces JPARepository basées sur Spring Data
    3 . Générer des données aléatoires concernant quelques étudiants et pour chaque étudiants des payements
