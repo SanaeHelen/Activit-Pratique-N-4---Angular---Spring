@@ -14,8 +14,8 @@ Première Partie (First Demo) :
       Nous avons déclaré le module Bootstrap dans le fichier angular.json :
       ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/60b9ed36-cf2d-46b5-89a8-2d00d83ba140)
 
-     
-     
+
+          
 
    - Création des composants :
      
@@ -24,6 +24,10 @@ Première Partie (First Demo) :
 
      Nous avons déclaré les routes de ces composants dans le fichier app-routing.module.ts.
      ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/388451c7-f121-4e2a-a8ee-98fded118a1a)
+
+
+     Dans le fichier app.component.html, nous avons créé deux boutons stylés pour "Home" et "Products" qui changent la vue affichée dans le <router-outlet> en fonction des liens de routage Angular :
+     ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0766934f-e703-4eed-bcf8-0a1f3d22963d)
 
 
 
@@ -37,7 +41,7 @@ Première Partie (First Demo) :
    - vknvknkvnsd
    - nknvskdnv
  le fichier app.component.html : 
-![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0766934f-e703-4eed-bcf8-0a1f3d22963d)
+
 
 Deuxième Partie :
 Créer une application web Angular qui permet de gérer des produits avec un backend basé sur Json-server
