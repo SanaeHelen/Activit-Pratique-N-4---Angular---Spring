@@ -9,9 +9,11 @@ Première Partie (First Demo) :
    - Installation de boostrap :
      
       Nous avons installé Bootstrap avec la commande suivante : `npm i bootstrap bootstrap-icons`.
+     
       ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/863ca352-bb3c-42e2-8b57-d0d4ae6254fe)
 
       Nous avons déclaré le module Bootstrap dans le fichier angular.json :
+     
       ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/60b9ed36-cf2d-46b5-89a8-2d00d83ba140)
 
 
@@ -20,13 +22,16 @@ Première Partie (First Demo) :
    - Création des composants :
      
      Nous avons créé deux composants, home et products, en utilisant les commandes : `ng g c home` et `ng g c product`.
+     
      ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/5fec184e-5950-48a9-8ab1-34e58a18ce7f)
 
      Nous avons déclaré les routes de ces composants dans le fichier app-routing.module.ts.
+     
      ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/388451c7-f121-4e2a-a8ee-98fded118a1a)
 
 
      Dans le fichier app.component.html, nous avons créé deux boutons stylés pour "Home" et "Products" qui changent la vue affichée dans le <router-outlet> en fonction des liens de routage Angular :
+     
      ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0766934f-e703-4eed-bcf8-0a1f3d22963d)
 
 
@@ -61,26 +66,34 @@ Première Partie (First Demo) :
 
 
    - Affichage d'une liste de produits :
-       - Creation d'une liste statique de produits dans le fichier products.component.ts :
+     
+       - Création d'une liste statique de produits dans le fichier products.component.ts :
+         
            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/497420fb-1783-4f36-a46f-2b2ceaddd8cd)
 
-       - Creation d'une table pour afficher les produits dans le  fichier products.component.html :
+       - Création d'une table pour afficher les produits dans le  fichier products.component.html :
+         
            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7a83779f-84e4-41f2-bbc1-f1480a26be69)
 
        - L'affichage :
+         
            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7407fddf-7fdd-4636-9f48-92435aefaf9f)
 
 
           
           
    - Suppression des produits :
-       - Creation de la methode deleteProduct() dans le fichier products.component.ts :
+     
+       - Création de la méthode deleteProduct() dans le fichier products.component.ts :
+         
            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/c12e3007-2331-44f2-b019-c62cbb81fe65)
 
        - L'ajout d'un bouton "Delete" dans le fichier products.component.html, avec une classe "btn btn-danger" qui appelle la méthode deleteProduct(p) lorsqu'il est cliqué, pour chaque produit de la liste affichée dans le tableau :
+         
            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/878c4dbe-f956-47ba-9c81-bc65ab6d69be)
 
        - L'affichage :
+         
            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/9997b96b-6d9a-4b0c-b20b-763a92f40b05)
            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/dd77ccc1-2921-45d9-8b4b-51c5a2afa230)
            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0c70c88e-1f8d-4f54-a09e-797958951799)
@@ -94,12 +107,43 @@ Première Partie (First Demo) :
 
 
 
-   - ddjsbsjd
-   - dnvsdnvdbvdjoihwir
-   - vnvkdnvnd
-   - vknvknkvnsd
-   - nknvskdnv
- le fichier app.component.html : 
+   - Chercher un produit :
+     
+        - Création d'une formulaire pour ajouter le champ de recherche dans le fichier products.component.html :
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/5f7b7477-5ac8-4bbd-98d7-39febd9fe612)
+
+        - L'importation des modules pour l'utilisation des formulaires , dans le fichier app.module.ts  :
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/24834fb1-3741-49f2-bc84-cd6c19cf009f)
+
+        - Création de la méthode serach() dans le fichier products.component.ts :
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/85bcf825-2588-46e3-ab56-97f59b30fa06)
+
+        - L'affichage :
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/3b6269ec-c6b9-4167-961d-307953f5d12c)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/dd6fa38a-6ddc-4fc9-add5-0649c5b4134a)
+
+
+   - Mettre en évidence l'onglet actif :
+     
+      - Création dans le fichier app.component.ts des méthodes de navigation vers les routes "home" et "products", avec mise à jour de la propriété currentRoute :
+        
+          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/6c11b1cd-cc9f-4b7e-8de4-a22f1d65c939)
+
+      - L'ajout dans le fichier app.component.html le déclenchement des méthodes de navigation vers les routes correspondantes, tout en appliquant les classes CSS dynamiquement en fonction de la route actuelle :
+        
+          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0354b71f-1a1c-41e1-bc12-9c7c0dd1f155)
+
+      - L'affichage :
+        
+          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/3cb17ec4-0ade-479f-ab32-49a969fd5449)
+          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/2c517b4c-7616-4415-a258-4afff6e8c3fa)
+
+
+   
 
 
 Deuxième Partie :
