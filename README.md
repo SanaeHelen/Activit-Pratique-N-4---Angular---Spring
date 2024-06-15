@@ -188,7 +188,10 @@ Ensuite, nous avons effectué les tâches suivantes :
          
 
        - L'affichage :
-         
+    
+            
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/e41da5ba-6399-4296-9bf8-634374be6926)
+
             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/46ed182c-c8c4-4d94-b75b-dc8afcf75460)
 
 
