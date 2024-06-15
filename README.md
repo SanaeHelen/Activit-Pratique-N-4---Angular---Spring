@@ -146,8 +146,15 @@
    
 
 
-Deuxième Partie :
+**Deuxième Partie :**
+
+
 Créer une application web Angular qui permet de gérer des produits avec un backend basé sur Json-server
+
+
+
+
+
 
 Troisième Partie : Spring Angular
 
