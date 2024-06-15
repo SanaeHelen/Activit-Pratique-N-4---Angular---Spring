@@ -148,10 +148,68 @@
 
 **Deuxième Partie :**
 
+   Après avoir créé un nouveau projet Angular avec la commande "ng new Angular_SecondApp", nous avons installé Bootstrap et Bootstrap Icons avec la commande "npm i bootstrap bootstrap-icons". Ensuite, dans le fichier angular.json, nous avons ajouté les liens indiqués dans la capture d'écran ci-dessous dans les sections styles :[] et scripts : [] :
+   
+   ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/c3197920-a22a-4e39-8852-32854b4866a8)
 
-Créer une application web Angular qui permet de gérer des produits avec un backend basé sur Json-server
 
 
+Dans le fichier style.css on a ajouté la ligne suivante : 
+
+   ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/33a31d92-40ae-4091-980a-0d7f22459441)
+
+
+Ensuite, nous avons effectué les tâches suivantes :
+
+   - Création des composents :
+     
+       - Nous avons créé trois composants : Home, Products et New Product, en utilisant les commandes suivantes : 'ng g c home', 'ng g c products' et 'ng g c new-product'.
+
+     
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/fbc134fd-0b01-4bf9-ba24-684794e8c5f7)
+     
+
+       - Dans le fichier app.routes.ts, nous avons défini les routes des composants.
+    
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/f6a2899a-7444-4a27-a121-b21c44339613)
+         
+
+       - Dans notre fichier app.component.ts, le composant racine AppComponent gère une liste d'actions de navigation représentée par un tableau d'objets contenant des titres, des routes et des icônes, et définit la méthode setCurrentAction() pour mettre à jour l'action actuelle lorsqu'un bouton est cliqué.
+    
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7ee6e6f0-aed1-44be-9667-9be680c6d2ea)
+         
+
+       - La vue app.component.html contient une barre de navigation <nav> avec des boutons générés dynamiquement via *ngFor, liés chacun à une route spécifique avec routerLink. Les classes des boutons sont déterminées dynamiquement selon l'action en cours, et <router-outlet> est utilisé pour afficher les vues des différentes routes de l'application.
+    
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/e5c0a586-2928-4c1e-9e99-ffca420193de)
+         
+
+       - L'affichage :
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/46ed182c-c8c4-4d94-b75b-dc8afcf75460)
+
+
+      
+   - Création de la base de données :
+   - Création d'un service : 
+   - Affichage des produits :
+   - Supprimer un poduit :
+   - Chercher un produit :
+   - La pagination des produits : 
+   - Modifier un produit :
+   - wscsaojsojc :
+   - svnvqevnsaksvq
+   - veoemadenv
+   - dvvslvmslmv
+   - knvsjdbvjbdvj
+   - svjbsakbkbvlsbvjd
+   - sknksdkbvjsdbv
+   - sjbvkebksbjcnmmnsnvknv
+   - scksnckscns
+   - 
 
 
 
