@@ -216,8 +216,50 @@ Ensuite, nous avons effectué les tâches suivantes :
            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/ee3788a4-3b38-4dc9-b118-035c7d9da553)
 
 
-   - Affichage des produits :
+   - Récupérer la liste des produits :
+     
+       - Pour afficher la liste des produits en cliquant sur le bouton Products, on envoie une requête HTTP au backend via le module HttpClient dans product.service.ts. Ce service Angular injectable gère les opérations CRUD pour les produits avec la méthode getProducts() pour récupérer la liste, utilisant un observable pour une gestion asynchrone des données et des erreurs.
+
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/b6058b1e-1830-45e3-861f-b0170f2c9be0)
+
+       - Dans products.component.ts, le ProductsComponent gère l'affichage et la manipulation des produits. Sa méthode ngOnInit() appelle getProducts() du service ProductService pour charger la liste des produits via une requête HTTP.
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/356bf965-d53f-4a76-8d58-6bdd8da38695)
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/d705b511-474d-4da0-8183-d8915ee54536)
+
+
+
+   - Vérifier un produit :
+     
+        - La méthode checkProducts() dans le fichier product.service.ts :
+
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/65553b03-6580-462f-a903-ac9db43ebc64)
+
+
+        - La méthode handleCheckProduct() dans le fichier products.component.ts  :
+          
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/b270e679-10b8-42c9-8e91-d5f8d9d32238)
+
    - Supprimer un poduit :
+     
+        - La méthode deleteProducts() dans le fichier product.service.ts :
+
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/c41c7bb1-2bee-4fc4-a244-db5be759e0bc)
+
+
+
+        - La méthode handleDelete() dans le fichier products.component.ts  :
+          
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/e8899e2e-243b-483d-bdd4-d137df2eb42b)
+
+   - Affichage du produit :
+     
+        - Le fichier products.component.html utilise la directive *ngFor pour afficher une liste de produits dans une table avec des colonnes "Name", "Price" et "Checked". Chaque produit est représenté par un bouton pour la vérification et la suppression, avec des icônes dynamiquement ajustées selon l'état de vérification du produit.
+          
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/bd2b7acd-a586-4f02-b544-6e852987578d)
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/a8bd8204-0040-4562-b579-8849f2f0616f)
+
+
    - Chercher un produit :
    - La pagination des produits : 
    - Modifier un produit :
