@@ -273,6 +273,7 @@ Ensuite, nous avons effectué les tâches suivantes :
         - Le fichier new-product.component.ts :
 
             Le fichier ‘new-product.component.ts’ définit le composant Angular ‘NewProductComponent’ pour la création de nouveaux produits, intégrant l'initialisation du formulaire avec validation et l'enregistrement des produits via ‘ProductService’ lors de la soumission du formulaire.
+    
           
             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/8ef1e5ca-e814-4224-9e16-5f4b13faa9f7)
             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/f3d0ee52-1b93-40b3-a29a-c656b4824b4e)
@@ -281,6 +282,7 @@ Ensuite, nous avons effectué les tâches suivantes :
         - Le fichier new-product.component.html :
           
             Le fichier ‘new-product.component.html’ définit le template HTML du composant ‘NewProductComponent’, incluant un formulaire de création de produit avec des validations et des gestionnaires d'événements Angular comme ‘(ngSubmit)’ lié à la méthode ‘saveProduct()’ du composant.
+    
           
             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7edc4987-c6b4-4ea5-9d81-6c614b5884b8)
 
