@@ -197,6 +197,18 @@ Ensuite, nous avons effectué les tâches suivantes :
 
       
    - Création de la base de données :
+     
+        - Pour créer notre base de données, on doit créer un dossier dans notre projet appelé "data". À l'intérieur, on crée un fichier nommé "db.json" où on spécifie nos données de produits.
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/145f7880-f16d-49e0-a803-4205e073d1af)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/b51292d9-b3fd-4ff6-95bd-60fdc18efa56)
+
+
+        - Pour démarrer JSON Server, on utilise la commande suivante : `json-server -w data/db.json -p 8089`:
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/269492c6-eb35-417f-abfc-ab8760ce9513)
+
+
    - Création d'un service : 
    - Affichage des produits :
    - Supprimer un poduit :
