@@ -209,7 +209,13 @@ Ensuite, nous avons effectué les tâches suivantes :
             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/269492c6-eb35-417f-abfc-ab8760ce9513)
 
 
-   - Création d'un service : 
+   - Création d'un service :
+     
+       - On a créé un service en utilisant la commande suivante : `ng g s services/products`.
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/ee3788a4-3b38-4dc9-b118-035c7d9da553)
+
+
    - Affichage des produits :
    - Supprimer un poduit :
    - Chercher un produit :
