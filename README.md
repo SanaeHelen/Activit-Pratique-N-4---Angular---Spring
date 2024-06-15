@@ -289,6 +289,10 @@ Ensuite, nous avons effectué les tâches suivantes :
           
             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/d22319d2-a4a1-4535-a115-916d0f5cb03c)
             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/be3c226f-7e6d-4d36-854d-6061bdd1fb8d)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/e6409bc7-e556-4a2c-ad40-44a696acd4f8)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/bb813aa4-ac2d-4891-98cf-12a5fffb0b24)
+
+
 
 
 
