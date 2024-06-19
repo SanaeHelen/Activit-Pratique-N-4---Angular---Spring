@@ -380,14 +380,20 @@ Ensuite, nous avons effectué les tâches suivantes :
 
 
         - Pour prendre en charge cette nouvelle route, nous avons ajouté la définition de la route editProduct/:id dans le fichier app.routes.ts :
+    
+          
              ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/71f9ad2f-f5c8-44d2-b594-c284fa17289d)
 
 
         - La méthode getProductById() du fichier product.service.ts, envoie une requête HTTP GET au backend pour récupérer les détails d'un produit spécifique.
+    
+          
              ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7c5dc1d6-2255-4b83-b253-94893b14a9d0)
 
  
         - La méthode updateProduct()  du fichier product.service.ts, est utilisée pour mettre à jour les informations d'un produit existant sur le backend.
+    
+          
              ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/a3ab48ab-5cd4-4e0a-aafa-8e504d3d86a2)
 
 
