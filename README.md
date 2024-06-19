@@ -299,10 +299,73 @@ Ensuite, nous avons effectué les tâches suivantes :
 
 
    - Chercher un produit :
-   - La pagination des produits : 
+     
+       - La méthode searchProducts() dans le fichier product.service.ts permet d'effectuer une recherche de produits en fonction d'un mot-clé spécifié. En utilisant une requête HTTP GET, elle communique avec l'API de produits en incluant le paramètre name_like dans l'URL.
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/b8cfe9e5-93ac-42b1-bf25-2da1b510f2d3)
+
+
+       - La méthode searchProducts() est définie dans le composant product.component.ts. Elle utilise le service productService pour effectuer une recherche de produits en fonction du mot-clé spécifié dans la variable keyword.
+    
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/2b3496b9-ac2f-4e03-acb9-3134d38479bb)
+
+
+       - Le code HTML extrait du fichier `product.component.html` crée une barre de recherche de produits avec un champ de texte et un bouton de recherche.
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/3438a920-38dd-4c96-86eb-ac39a05a0bec)
+
+
+       - L'affichage :
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/b3224b2e-a816-4220-a4b7-454c84be29d6)
+
+   - La pagination des produits :
+     
+       Pour mettre en œuvre la pagination, les méthodes getProducts() des fichiers product.service.ts et product.component.ts ont été mises à jour.
+
+        - La méthode getProduct() du fichier product.service.ts:
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/6569578d-b3aa-4acb-baab-c8107982bae9)
+
+        - La méthode getProduct() du fichier product.component.ts:
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7e80c2f1-1afe-401a-b672-9548b9751218)
+
+        - Le fichier product.component.html:
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/ae42f264-f99e-4c35-94b7-ad07e73774df)
+
+        - L'affichage :
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/bfb38a5a-9639-40fa-8d9a-cd57119b7966)
+
+
+       Nous avons apporté une modification significative en renommant la méthode getProduct() en searchProduct() afin de mieux refléter sa fonctionnalité, qui consiste à rechercher des produits en fonction d'un mot-clé donné. Cette modification a été implémentée à la fois dans le fichier product.service.ts et dans le fichier product.component.ts.
+
+     
+        - Dans le fichier product.service.ts, la méthode searchProducts() a été mise à jour pour accepter un paramètre supplémentaire keyword, qui représente le mot-clé à rechercher :
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/8ead9255-e9e9-48b1-8f0c-81a9a98ed183)
+
+
+        - Dans le fichier product.component.ts, la méthode searchProducts() a également été mise à jour pour inclure le paramètre keyword lors de l'appel à la méthode searchProducts() du service productService.
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/ca035904-660e-4318-b836-b67984c8424f)
+
+
+        - L'affichage :
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/6ca27744-6a2b-4cbc-b45a-d8b85035a919)
+
+
+      
+
+
    - Modifier un produit :
    - wscsaojsojc :
    - svnvqevnsaksvq
+   -  
    - veoemadenv
    - dvvslvmslmv
    - knvsjdbvjbdvj
