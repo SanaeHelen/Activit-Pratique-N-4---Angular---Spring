@@ -1,4 +1,4 @@
-# Activit-Pratique-N-4---Angular---Spring
+![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7b10e103-5dde-4b2d-8f3e-66f96754552f)# Activit-Pratique-N-4---Angular---Spring
 
 
 **Première Partie  :**
@@ -422,14 +422,117 @@ Ensuite, nous avons effectué les tâches suivantes :
 
 
 
-   - wscsaojsojc :
-   - svnvqevnsaksvq
-   -  
-   - veoemadenv
-   - dvvslvmslmv
-   - knvsjdbvjbdvj
-   - svjbsakbkbvlsbvjd
-   - sknksdkbvjsdbv
+   - Création du servie app-state :
+     
+        - Nous avons créé le service app-state en utilisant la commande : `ng g s services/app-state`.
+          
+        - Le service a une propriété appelée productsState qui contient l'état des produits :
+          
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/d05d78a4-f85d-4ef3-9685-e193dcbbefe4)
+
+
+        - La méthode setProductState(state:any) pour mettre à jour l'état des produits.
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/df2ceca1-85f7-4d76-9458-cf417bde4d08)
+
+
+        - Le fichier product.component.ts:
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7c911a4f-0150-4234-9378-3c132bdad2f3)
+
+
+        - Le fichier product.component.html:
+          
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/bed5c17f-b6b4-4f9c-b726-5c69e6069ed2)
+
+          
+   - Création du composant dashboard :
+     
+       - Nous avons créé le composant dashboard en utilisant la commande : `ng g c dashboard`.
+         
+       - Le fichier dashboard.component.html: affiche des informations résumées sur les produits de l'application. Il utilise le service AppStateService pour accéder à l'état des produits et affiche le nombre de pages, la taille, le total de produits et le nombre de produits sélectionnés.
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/ee2529af-3eb6-4e9a-a4c7-581999015297)
+
+
+       - L'affihage :
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/2b6b913a-df86-4447-b7bf-45f098436bac)
+
+   - Création du composant navbar :
+     
+        - Nous avons créé le composant navbar en utilisant la commande : `ng g c navbar`. Ce composant Angular qui représente la barre de navigation de l'application. Il contient des boutons pour accéder à différentes parties de l'application et affiche un spinner de chargement lorsque nécessaire.
+          
+        - Le fichier navbar.component.ts :
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/b7c096af-27c0-4a7f-8b8c-4645e579b1d9)
+
+        - Le fichier navbar.component.html :
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/3dc5e6c8-61b5-495d-a83d-6cca194964ca)
+
+        - L'affichage :
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/4bf3080b-92f9-42d5-be04-4b176956e2aa)
+
+     
+   - Création du composant app-errors :
+     
+        - Nous avons créé le composant app-errors en utilisant la commande : `ng g c app-errors`. Ce composant Angular affiche les erreurs de l'application lorsque le statut est "ERROR". Il utilise le service AppStateService pour récupérer les informations sur l'erreur à afficher.
+
+        - Le fichier app-errors.component.ts :
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/131eb36b-c67d-4ba2-bde5-a15fe5743955)
+
+        - Le fichier app-errors.component.html :
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/db0012fb-e6a9-4b53-afff-8cb4b824ab03)
+
+        - L'affichage :
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/135fc0b8-1981-4d7e-b452-c8be8a8a7d21)
+
+   
+   -  Création de l’intercepteur HTTP app-http :
+     
+       - Nous avons créé l’intercepteur HTTP app-http en utilisant la commande : `ng g interceptor app-http`. Cet intercepteur HTTP AppHttpInterceptor gère l'ajout d'un en-tête d'autorisation aux requêtes sortantes et contrôle  l'affichage du spinner de chargement pendant la durée de la requête grâce aux services AppStateService et LoadingService.
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/a32e3741-21f9-4727-9a43-fa7b10619ea6)
+
+
+
+      
+   - Création du servie loading :
+     
+       - Nous avons créé le service loading en utilisant la commande : `ng g s services/loading`. Ce service utilise un observable (isLoading$) pour gérer l'état du spinner de chargement dans l'application. Il fournit des méthodes showLoadingSpinner() et hideLoadingSpinner() pour afficher et cacher le spinner en émettant des valeurs booléennes.
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/89419679-516f-4726-8bf1-02c28d4b6bf4)
+
+
+         
+   - Création de la page login:
+     
+       - Nous avons créé le composant login en utilisant la commande : `ng g c login`.
+         
+       - Le fichier login.component.html : On crée la partie html de la page login avec les deux champs username et password :
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/1571145c-e3d7-4b9b-adff-c09eb4ca6ce6)
+
+
+       - Le fichier login.component.ts : crée un formulaire de connexion avec deux champs (username et password) et une méthode pour gérer la soumission du formulaire et afficher les valeurs entrées dans la console.
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/4b366ca4-968c-45cc-8408-fffd8273730d)
+
+
+       - Le fichier app.routes.ts :
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/a4038ae7-ca0e-4b57-93c3-28496862f0ba)
+
+       - L'affichage :
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/d623b039-5b0f-4e2e-b5f5-b63ac279fc72)
+
+   - Création de la template admin : 
    - sjbvkebksbjcnmmnsnvknv
    - scksnckscns
    - 
