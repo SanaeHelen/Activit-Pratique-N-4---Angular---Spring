@@ -1,4 +1,4 @@
-![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7b10e103-5dde-4b2d-8f3e-66f96754552f)# Activit-Pratique-N-4---Angular---Spring
+# Activit-Pratique-N-4---Angular---Spring
 
 
 **Première Partie  :**
@@ -626,14 +626,43 @@ les utilisateurs non authentifiés.
 
 
    - Protection des routes :
+     
        - Nous avons créé deux gardiens Angular, AuthenticationGuard et AuthorizationGuard avec les commandes `ng g g guards/authentication` et `ng g g guards/authorization` , pour sécuriser les routes en vérifiant
 l'authentification et les autorisations des utilisateurs .
  
-       - La classe AuthenticationGuard : 
-       - sfsjfjskfjs
-       - sskj
-   - skhfskfks
-   - sdfjskjfs
+       - La classe AuthenticationGuard : on a implémenté la méthode canActivate() pour vérifier si l'utilisateur est authentifié.
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/b44fed18-5926-4c09-8b54-3e74acf547e3)
+
+       - La classe AuthorizationGuard : la méthode canActivate vérifie si les rôles de l'utilisateur correspondent aux rôles requis de la route.
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7b0601ce-f7bf-4302-bddc-d41ba6fbdb9e)
+
+       - Nous avons créé le composant not-authorized avec la commande : `ng g c not-authorized`, pour afficher une page d'erreur lorsque les utilisateurs tentent d'accéder à des routes pour lesquelles ils n'ont pas les autorisations nécessaires.
+         
+       - Le fichier not-authorized.component.html : affiche le message "You are not authorized" pour signaler un accès refusé.
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/cea193c8-9f95-48d9-871e-ef2d9d92dc2e)
+
+       - Le fichier app.routes.ts : On a défini les routes sécurisées par AuthenticationGuard et AuthorizationGuard. La route notAuthorized redirige vers une page spécifique lorsqu'un accès non autorisé est
+détecté. AuthenticationGuard vérifie si l'utilisateur est connecté, tandis que AuthorizationGuard contrôle les permissions pour accéder aux routes administratives.
+
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/36bdfabb-9166-4f4f-92db-a587f5e771fe)
+
+
+       - Si un utilisateur sans droits d'admin essaie d'accéder aux sections d'ajout ou de modification de produits, le message "You are not authorized" s'affiche comme suit :
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/9506c1d0-62b5-44e3-8bcc-731fd07151cb)
+
+
+       - Le fichier products.component.html : On a utilisé des conditions *ngIf pour afficher les boutons d'édition, de suppression, et de vérification uniquement si je possède le rôle 'ADMIN'. Cela assure que
+seuls les administrateurs peuvent modifier, supprimer ou vérifier les produits.
+
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/047ed057-3415-46af-855e-7d5bfe1813fc)
+
+
+       - L'affichage :
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/72a370d9-fa55-4c8e-b033-e60b62e2717e)
 
 
 
@@ -664,7 +693,7 @@ A: Développer et Tester la partie Backend avec Spring. :
         - Consulter le reçu d'un payement  (fichier pdf) 
      5 - Tester le backend en utilisant un client REST (Postman) et avec SWAGGER UI
      6 - Faire un refactoring du code en utilisant la couche service, les DTOs et les Mappers
-B : Développer la partie frontend en utilisant Angular avec Angular Material pour la partie design : https://www.youtube.com/watch?v=QqmoMDGr3Ww
+B : Développer la partie frontend en utilisant Angular avec Angular Material pour la partie design :
      1. Créer un projet angular 
      2. Intégrer Angular Material
      3. Créer une page template contenant un Toolbar avec une barre de menu et un Side Menu
