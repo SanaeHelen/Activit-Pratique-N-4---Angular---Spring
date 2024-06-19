@@ -609,8 +609,31 @@ Ensuite, nous avons effectué les tâches suivantes :
              ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/9d2894ac-f581-4d3e-9f14-788257eeec73)
 
 
-   - scksnckscns
-   - 
+   - Affichage de l'Utilisateur dans la Barre de Navigation :
+     
+       - Le fichier navbar.component.html : On a ajouté des conditions pour afficher le nom de l'utilisateur et un bouton de déconnexion si l'utilisateur est authentifié, sinon un bouton de connexion apparaît pour
+les utilisateurs non authentifiés.
+
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/857a3ad5-cd04-4a58-887d-3d98a031d75d)
+
+       - Le fichier navbar.component.ts : on a ajouté les méthodes logout() et login().
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/89ff9bd7-28a5-4366-b605-e34217fad386)
+
+       - L'affichage :
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/cab55e92-cf91-43b9-8e50-6d60c35e6b24)
+
+
+   - Protection des routes :
+       - Nous avons créé deux gardiens Angular, AuthenticationGuard et AuthorizationGuard avec les commandes `ng g g guards/authentication` et `ng g g guards/authorization` , pour sécuriser les routes en vérifiant
+l'authentification et les autorisations des utilisateurs .
+ 
+       - La classe AuthenticationGuard : 
+       - sfsjfjskfjs
+       - sskj
+   - skhfskfks
+   - sdfjskjfs
 
 
 
