@@ -532,8 +532,83 @@ Ensuite, nous avons effectué les tâches suivantes :
          
             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/d623b039-5b0f-4e2e-b5f5-b63ac279fc72)
 
-   - Création de la template admin : 
-   - sjbvkebksbjcnmmnsnvknv
+   - Création de la template admin :
+     
+       - Nous avons créé le composant admin-template en utilisant la commande : `ng g c admin-template`.
+         
+       - Le fichier admin-template. component.html  :  le navbar et le dashboard ne s’affiche que lorqsue on est connecté.
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/3cc846a4-6fd9-41a3-9bce-88f21ddd2e4f)
+
+
+       - Le fichier app.component.html : on met seulement router-outlet pour ne pas afficher rien que le formulaire:
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/6c664d5a-4f83-4be7-9630-ade7aa5c03c3)
+         
+
+       - Le fichier app.routes.ts : On a fait quelque modifications au niveau des routes pour rendre quelques pages accessibles seleument aprés la connexion .
+         
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/ef7b2a87-f562-43d2-be3c-7594de7660ef)
+
+
+       - La méthode handlelogin() :
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/85fc9c55-0331-4323-a1c1-82a342cccf86)
+     
+       - Le fichier navbar.component.ts :
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0f87c025-96ae-41b8-b110-507583da0de3)
+
+       - La création de quelques utilisateurs pour la connexion avec token jwt.
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0b781d11-0bcd-403e-b859-57fc10d7f57e)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/1344cca9-cfb1-4510-9043-5a38462bb70f)
+
+
+
+            
+
+   - Création du servie auth :
+     
+        - Nous avons créé le service auth en utilisant la commande : `ng g s auth`.
+          
+        - Le fichier auth.service.ts :
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/27285d4b-d81b-4bc3-a1d4-973681943797)
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/c91ed378-669e-4c4b-ba8a-89b71a316be5)
+
+
+        - L'installation du package jwt-decode via la commande : `npm i jwt-decode`.
+          
+        - Dans le fichier auth.service.ts, nous importons Injectable pour l'injection, HttpClient pour les requêtes HTTP, firstValueFrom pour gérer les Observables, AppStateService pour l'état global, et jwtDecode pour décoder les tokens JWT.
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/18c4eb02-6fe6-4379-900b-b7d9dd86eba8)
+
+        - La méthode login() dans le fichier auth.service.ts :
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/a3f850e5-c5cd-4ca6-8718-a0f355c41be2)
+
+        - le fichier login.component.ts : on a ajouté la variable errorMessage pour capturer et afficher les erreurs lors de la tentative de connexion de l'utilisateur.
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/96a3dc1c-0ec2-42ce-af6c-ec12edb99815)
+
+            
+        - La méthode handleLogin() :
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/ca1446a6-4f37-4c25-b558-0f2b5fc8fe1f)
+
+
+        - Le fichier login.component.html : On a ajouté une alerte qui affiche les messages d'erreur lorsqu'une tentative de connexion échoue.
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/9ca0d013-fef3-4248-a816-1d7efd0a3079)
+
+
+        - L'affichage :
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/9d2894ac-f581-4d3e-9f14-788257eeec73)
+
+
    - scksnckscns
    - 
 
