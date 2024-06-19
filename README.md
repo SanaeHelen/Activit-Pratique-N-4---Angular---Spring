@@ -363,6 +363,59 @@ Ensuite, nous avons effectué les tâches suivantes :
 
 
    - Modifier un produit :
+     
+        - Tout d'abord , dans le fichier product.component.html, un bouton a été ajouté pour chaque produit, permettant de déclencher l'édition de ce produit. Ce bouton est lié à la fonction handleEdit() définie dans le fichier product.component.ts.
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/225ce8d7-215d-42b0-be15-bc30f967fd6e)
+
+
+        - Ensuite, nous avons créé un nouveau composant Angular appelé edit-product à l'aide de la commande ng generate component edit-product . Ce composant est destiné à fournir une interface pour la modification des produits.
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/52238289-d7e5-49a9-b7a3-65b9842aa4ee)
+
+
+        - La fonction handleEdit() dans le fichier product.component.ts est responsable de la navigation vers la page de modification (editProduct) avec l'identifiant du produit à éditer :
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/a9cb3d5f-5ece-419c-aae2-cad5d514fd2b)
+
+
+        - Pour prendre en charge cette nouvelle route, nous avons ajouté la définition de la route editProduct/:id dans le fichier app.routes.ts :
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/71f9ad2f-f5c8-44d2-b594-c284fa17289d)
+
+
+        - La méthode getProductById() du fichier product.service.ts, envoie une requête HTTP GET au backend pour récupérer les détails d'un produit spécifique.
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7c5dc1d6-2255-4b83-b253-94893b14a9d0)
+
+ 
+        - La méthode updateProduct()  du fichier product.service.ts, est utilisée pour mettre à jour les informations d'un produit existant sur le backend.
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/a3ab48ab-5cd4-4e0a-aafa-8e504d3d86a2)
+
+
+        - Le fichier edit-product.component.ts : Dans cette méthode `ngOnInit()`, nous initialisons le composant en extrayant l'identifiant du produit à partir de l'URL, puis récupérons les détails du produit via `ProductService`, construisons un formulaire réactif avec `FormBuilder`, ajoutons des validations, et gérons les erreurs de récupération en affichant les messages dans la console.
+    
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/4e1f0b8a-b82c-4faf-a67f-f30439558405)
+
+
+        - La méthode updateProduct() du fichier edit-product.component.ts ,  est responsable de la mise à jour des informations d'un produit dans l'application Angular.
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/36e79e90-1972-46c4-89ba-159baf473e4f)
+
+
+        - Le fichier edit-product.component.html : Ce fichier HTML constitue le formulaire de modification d'un produit dans l'application.
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/66ede44d-03fd-4b54-8b55-4cd193ef557b)
+ 
+        - L'affichage :
+          
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/25c37ec2-2bc8-4ff4-8676-80217c0aa13e)
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/ca914fb0-256a-45bb-9fe6-7946fe77dad3)
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/c0425769-770f-4e85-865b-2c8f339e399d)
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0bded002-9035-4e59-9674-929fdb4ab90d)
+
+
+
+
    - wscsaojsojc :
    - svnvqevnsaksvq
    -  
