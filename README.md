@@ -1002,12 +1002,30 @@ B : Développer la partie frontend en utilisant Angular avec Angular Material po
 
        
   7. Créer les components fonctionnels de l'application :
-           - Afficher les payements avec une Pagination frontend
-           - Afficher et chercher les étudiants
-           - Afficher le Dashboard d'un étudiant (Infos et Payements)
-           - Ajouter un nouveau payement en uploadant le reçu de payement
-           - Consulter le détail d'un payement
-           - Mettre à jour le status d'un payement
-  C : Sécurité avec Spring Security et Json Web Token
-           - Sécuriser le backend
-           - Sécuriser le front end
+     
+      - Afficher les payements avec une Pagination frontend :
+     
+         - le fichier payment.component.ts : Le composant PaymentsComponent affiche les données des paiements provenant du backend en utilisant Angular Material.
+           
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/32f0756f-07f2-469a-b709-19f9dff884b2)
+           
+         - Le fichier payment.component.html :
+           
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/b590fa48-f8fe-40e3-9443-b41dac9bd7c2)
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/3d6a1afd-f5a9-4096-ab1c-24c1f09dc048)
+
+
+         - L'affichage :
+           
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/a9e58dfe-dbc9-4f5c-89c2-81fbbc83bf83)
+             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/9546e027-c25e-43e4-a442-2de3a4f63f20)
+
+
+                 
+
+             
+           
+     
+     
+       
+           
