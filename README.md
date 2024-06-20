@@ -667,32 +667,95 @@ seuls les administrateurs peuvent modifier, supprimer ou vérifier les produits.
 
 
 
-Troisième Partie : Spring Angular
+**Troisième Partie : Spring Angular**
 
-Objectif : 
-Développer une application qui permet de gérer le payement des étudiants. Chaque étudiants peut effectuer plusieurs payements
-- Chaque étudiant est défini par son : id, firstName, lastName, email, sa filière, sa photo,
-- Chaque Payement est défini par son id, son code, sa date, son type (CASH, CHECK,TRANSFER), son status (CREATED, VALIDATED, REJECTED), file (fichier pdf représentant le reçu de payement)
 
 A: Développer et Tester la partie Backend avec Spring. :  
-   1. Créer les entités JPA
-   2. Créer les interfaces JPARepository basées sur Spring Data
-   3 . Générer des données aléatoires concernant quelques étudiants et pour chaque étudiants des payements
-   4. Créer une Web service RESTful (ResController) qui permet d'exposer les fonctionnalisés suivantes :
-        - Consulter tous les payements
-        - Consulter un payement sachant son id
-        - Consulter les payemenst d'un type donné
-        - Consulter les payements d'un status donné
-        - Consulter les payements d'un étudiant donné
-        - Consulter les payements d'une filière donnée
-        - Consulter tous les étudiants
-        - Consulter les étudiants d'une filière donnée
-        - Consulter un étudiant sachant son code
-        - Effectuer un nouveau payement avec les données et le reçu de payement au format pdf
-        - Mettre à jour le status d'un payement
-        - Consulter le reçu d'un payement  (fichier pdf) 
-     5 - Tester le backend en utilisant un client REST (Postman) et avec SWAGGER UI
-     6 - Faire un refactoring du code en utilisant la couche service, les DTOs et les Mappers
+   1. Créer les entités JPA :
+        - Payment : Cette entité capture les détails d'un paiement effectué par un étudiant.
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/adce535a-be44-4645-aa04-c77403f6fa0b)
+
+        - PaymentType : Cette énumération définit les différents types de paiements possibles.
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/192e899f-2843-4235-8445-a0dd71f50b28)
+
+        - PaymentStatus : Cette énumération représente l'état d'un paiement.
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/fc621e98-e228-4153-8a14-8dcbb597426a)
+
+        - Student : Cette entité représente les informations d'un étudiant, y compris des détails personnels et d'identification.
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/774bf6c5-cae3-4c22-9f68-bffbff72bff9)
+
+   3. Créer les interfaces JPARepository basées sur Spring Data :
+        - PaymentRepository : Ces méthodes permettent de rechercher des paiements selon le code de l'étudiant, le statut du paiement ou le type de paiement.
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/46b5fdb9-3efe-4beb-aa61-d4844f2bbeec)
+
+        - StudentRepository : Ces méthodes permettent de rechercher des étudiants en fonction de leur code d'identification ou de l'identifiant de leur programme.
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/44f577ce-7829-4220-ac0e-8631a82adbd3)
+
+   3 .Générer des données aléatoires concernant quelques étudiants et pour chaque étudiants des payements
+       ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/e1f4df33-a8f3-473c-838d-0873977bd980)
+       ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/451c47bc-3d4b-4706-9069-2d2b73ed9376)
+
+
+   5. Créer une Web service RESTful (ResController) qui permet d'exposer les fonctionnalisés suivantes :
+        - Consulter tous les payements : localhost:8021/payments
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/4e214c8e-b96f-47d5-b13b-8e045b514f85)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0a4dca2d-d9a4-4978-b3a6-52c4c56edb19)
+
+
+        - Consulter un payement sachant son id : localhost:8021/payments/1
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/4f5b5053-da7d-425d-b87d-cfd2b17453d6)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/d9529d2b-7db5-4c46-8864-5db5dd0891fe)
+
+
+        - Consulter les payemenst d'un type donné : localhost:8021/payments/byType?type=DEPOSIT
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/69efb62b-f0dc-4f95-9010-828de0e775a5)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/ec0db177-87e0-4a61-948f-1b37c436580c)
+
+
+        - Consulter les payements d'un status donné : localhost:8021/payments/byStatus?status=CREATED
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/25588b9b-d10f-4380-865c-ffdff9e035c1)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/0db7fe65-8fed-4097-a2bc-b9b5583337ca)
+
+
+        - Consulter les payements d'un étudiant donné : localhost:8021/students/112255/payments :
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/5a89b6aa-a1f7-462a-b39e-9fbc133058f1)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/a9a4ca8a-ffdd-41e7-aaeb-9e4b5aca2608)
+
+
+        - Consulter les payements d'une filière donnée: localhost:8021/payments/byProgramId?programId=IAAD
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/1eb214b0-1afd-4608-b229-b5b014f97a8b)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/b2992c45-5cff-4493-b1b9-56abd357e8be)
+
+
+        - Consulter tous les étudiants : localhost:8021/students
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/add3607a-085e-4a3f-b629-dff0dc681cd8)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/a887236b-b310-4c89-a775-f089f3ad5f7b)
+
+
+        - Consulter les étudiants d'une filière donnée : localhost:8021/studentsByProgramId?programId=IAAD
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/4e002d03-bbf3-40dc-9b24-8b65dc6f76b9)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/9d4fc260-4d78-4fa0-adb2-afec65adb1c1)
+
+
+        - Consulter un étudiant sachant son code : localhost:8021/students/112233
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/30e423ff-46cb-421d-bab6-b084762638ea)
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/68cdeaf4-a1ab-48f4-9b33-5532e9677767)
+
+
+        - Effectuer un nouveau payement avec les données et le reçu de payement au format pdf :
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/50348030-75cd-4979-90e2-ed452ddb7a54)
+
+        - Mettre à jour le status d'un payement :
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/1dc5f1b4-aaaa-451d-b84f-bfd548f11489)
+
+        - Consulter le reçu d'un payement  (fichier pdf) :
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/f6601938-afbd-4269-9665-4ce37ae683b4)
+
+   5 - Tester le backend en utilisant un client REST (Postman) et avec SWAGGER UI :
+        ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/90b1c415-5464-4aea-9bf0-61660391bdf9)
+        On accède à http://localhost:8021/swagger-ui/index.html pour visualiser la documentation interactive de l'API, explorer les différents endpoints disponibles et tester les requêtes directement via l'interface utilisateur de Swagger.
+
+   6 - Faire un refactoring du code en utilisant la couche service, les DTOs et les Mappers
 B : Développer la partie frontend en utilisant Angular avec Angular Material pour la partie design :
      1. Créer un projet angular 
      2. Intégrer Angular Material
