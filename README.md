@@ -690,7 +690,7 @@ A: Développer et Tester la partie Backend avec Spring. :
           
            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/774bf6c5-cae3-4c22-9f68-bffbff72bff9)
 
-   3. Créer les interfaces JPARepository basées sur Spring Data :
+   2. Créer les interfaces JPARepository basées sur Spring Data :
       
         - PaymentRepository : Ces méthodes permettent de rechercher des paiements selon le code de l'étudiant, le statut du paiement ou le type de paiement.
           
@@ -700,13 +700,13 @@ A: Développer et Tester la partie Backend avec Spring. :
           
             ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/44f577ce-7829-4220-ac0e-8631a82adbd3)
 
-   3 .Générer des données aléatoires concernant quelques étudiants et pour chaque étudiants des payements : 
+   3. Générer des données aléatoires concernant quelques étudiants et pour chaque étudiants des payements : 
    
    ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/e1f4df33-a8f3-473c-838d-0873977bd980)
    ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/451c47bc-3d4b-4706-9069-2d2b73ed9376)
 
 
-   5. Créer une Web service RESTful (ResController) qui permet d'exposer les fonctionnalisés suivantes :
+   4. Créer une Web service RESTful (ResController) qui permet d'exposer les fonctionnalisés suivantes :
       
         - Consulter tous les payements : localhost:8021/payments
           
@@ -774,7 +774,7 @@ A: Développer et Tester la partie Backend avec Spring. :
           
            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/f6601938-afbd-4269-9665-4ce37ae683b4)
 
-5 - Tester le backend en utilisant un client REST (Postman) et avec SWAGGER UI :
+5. Tester le backend en utilisant un client REST (Postman) et avec SWAGGER UI :
    
    ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/90b1c415-5464-4aea-9bf0-61660391bdf9)
 
@@ -803,7 +803,7 @@ A: Développer et Tester la partie Backend avec Spring. :
 
 
 
- 6 - Faire un refactoring du code en utilisant la couche service, les DTOs et les Mappers 
+ 6. Faire un refactoring du code en utilisant la couche service, les DTOs et les Mappers 
 
    ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/54dd7e20-8362-4aa2-8563-e1623833ab74)
    ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/131665f2-30c8-4901-803c-ae3a33a2cd3f)
@@ -827,10 +827,10 @@ B : Développer la partie frontend en utilisant Angular avec Angular Material po
                            ng new frontend-ang-app --directory=./ --no-standalone
                            ng add @angular/material
 
-   3. Intégrer Angular Material
+   2. Intégrer Angular Material
         La commande pour créer le component admin-template  :  ng g c admin-template
 
-   5. Créer une page template contenant un Toolbar avec une barre de menu et un Side Menu :
+   3. Créer une page template contenant un Toolbar avec une barre de menu et un Side Menu :
       
         Le fichier Admin-template.component.html :
       
@@ -838,7 +838,7 @@ B : Développer la partie frontend en utilisant Angular avec Angular Material po
          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/4ec997e3-2fff-4a7b-9999-a6103f6ac7e0)
 
 
-   7. Créer les différents component de l'application :
+   4. Créer les différents component de l'application :
       
        - Creation des composant :
             ng g c login    
@@ -905,8 +905,103 @@ B : Développer la partie frontend en utilisant Angular avec Angular Material po
          
       
 
-   9. Créer un système d'authentification simple qui oblige l'utilisateur à s'authentifier avant d'accéder à l'application. Dans un premier temps, les utilisateurs et les rôles qui ont le droit d'accéder à l'application sont stockés de manière statique dans le service d'authentification. Protéger les routes par Un Guard d'authentification et un Guard pour les autorisations
-     6. Créer les components fonctionnels de l'application :
+   5. Créer un système d'authentification simple qui oblige l'utilisateur à s'authentifier avant d'accéder à l'application. Dans un premier temps, les utilisateurs et les rôles qui ont le droit d'accéder à l'application sont stockés de manière statique dans le service d'authentification. Protéger les routes par Un Guard d'authentification et un Guard pour les autorisations.
+
+       - La page d’Authentification:
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/91cc9620-5a4b-4738-8263-d14a831e3ca5)
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/98025719-67a1-447e-a7fd-f7120ac2ccea)
+
+
+       - Le fichier Login.component.ts   pour récupérer les données du formulaire:
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/fdcea5e2-84d4-4139-919e-2e7393221ae6)
+
+       - Creation du service auth avec la commande :  ng g s sevices/auth
+         
+       - Le fichier auth.service.ts: pour gérer l’authentification avec 2 utilisateurs admin et user1
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/e12f3d9f-de30-4e9a-8fbc-2a945d2eabe1)
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/95696c3d-bd0d-43eb-95e4-896a6c9fbf05)
+
+
+       - Le fichier Admin-template.ts :
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/279e0dbf-88c3-46b0-9e90-4ec5e82137e1)
+
+       - La fonction logout dans auth.services.ts pour se déconnecter :
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/6963e765-c4b8-4caf-bc71-759a71a57afb)
+
+       - Affichage du nom de l'utilisateur :
+         
+          Lorsque l’admin qui se conncte on aura ca:
+      
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/87e0b802-fb43-4565-b420-d442a94b0f7b)
+         
+          Lorsque l’user1 qui se conncte on aura ca:
+      
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/bb826d3e-549a-402c-afe8-d3d1014d768e)
+
+
+       - Pour protejer la connexion an va créer un guard avec la commande : ng g g guards/auth
+         
+       - Le fichier Auth.guards.ts :
+         
+            ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/2da4cbb9-847b-40e4-8d59-2fdd21a4b118)
+
+       - On va declarer le service dans le fichier app.module.ts :
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/f7491b29-6a57-4fe7-b0b6-c8ab6e4c8d5c)
+
+       - puis il faut protéger la route admin dans le fichier app-routing.module.ts :
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/7fe9d2f9-00a4-4e93-9ca0-4d82a70032cb)
+
+       - Lorsque nous entrons l'URL : http://localhost:4200/admin, rien ne s'affiche :
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/135792bb-5f4d-4cd7-9fc7-976331235fa1)
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/bee7ad64-71cc-404c-9720-3fa208aedb3a)
+
+
+       - Le fichier auth.guard.ts contient un gardien d'authentification (AuthGuard) qui protège les routes. Le gardien utilise deux services injectés, AuthService pour vérifier si l'utilisateur est authentifié, et Router pour naviguer. La méthode canActivate vérifie si l'utilisateur est authentifié via authService.isAuthenticated. Si c'est le cas, l'accès à la route est autorisé (return true). Sinon, l'utilisateur est redirigé vers la page de déconnexion (/logout) et l'accès est refusé (return false). Ce gardien s'assure que seules les personnes authentifiées peuvent accéder aux routes protégées.
+         
+          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/2711b6ce-5704-4ab6-b9cd-a689044d3524)
+          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/b19b1dd7-5a2e-430d-bf96-92cf0b201466)
+          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/579cbb8f-97e6-427e-b3f3-ad3a62382084)
+
+
+
+       - Pour protéger les routes par les rôles on va ajouter un autre Guard : authorization.guard.ts, on va déclarer AuthorizationGuard dans providers dans le fichier app.module.ts :
+         
+          ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/18602c04-69d4-4db6-b0b8-1d9b0b29d097)
+ 
+
+       - dans le fichier app-routing.module.ts on doit protéger les routes :
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/f7e05a81-fe1b-4b10-886c-45fab62d59fd)
+
+       - Le fichier authorization.guard.ts protège les routes en fonction des rôles des utilisateurs. Il utilise AuthService pour vérifier l'authentification et obtenir les rôles de l'utilisateur, et Router pour la navigation. La méthode canActivate vérifie si l'utilisateur est authentifié ; sinon, il est redirigé vers /logout. Si l'utilisateur est authentifié, elle compare ses rôles avec ceux requis pour la route. Si un rôle correspond, l'accès est autorisé, sinon, il est refusé. Ce gardien s'assure que seuls les utilisateurs authentifiés et autorisés accèdent aux routes protégées.
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/dcb655f1-3456-4c95-838a-257cc00d91e7)
+
+       - Le menu doit être masqué pour l'utilisateur user1 et s'afficher pour l'utilisateur admin .Pour ce faire, nous allons ajouter un test de rôle dans le fichier admin-template.component.html :
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/c753e51a-439b-4d9d-9618-a9e1644d9e90)
+
+       - Authentification avec l’utilisateur admin :
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/c23c9c6e-a754-438b-976e-5b5d41d03875)
+
+       - Authentification avec l’utilisateur user1 :
+         
+           ![image](https://github.com/SanaeHelen/Activit-Pratique-N-4---Angular---Spring/assets/136022070/244bfa15-5ecd-4e7a-92c1-63658f874631)
+
+     
+         
+
+       
+  7. Créer les components fonctionnels de l'application :
            - Afficher les payements avec une Pagination frontend
            - Afficher et chercher les étudiants
            - Afficher le Dashboard d'un étudiant (Infos et Payements)
